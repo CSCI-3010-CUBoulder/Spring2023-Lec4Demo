@@ -62,7 +62,11 @@ long long Factorial(long long n){
 }
 
 // returns -1 if the number is negative and 1 if positive
-int Sign(int num);
+int Sign(int num){
+	if(num==0)
+		return 0;
+	return (num<1)? -1 : 1;
+}
 
 // takes two vectors of doubles, a and b. The function then removes elements from a if they are also in b.
 // If the double is in b, but not in a, nothing happens.
